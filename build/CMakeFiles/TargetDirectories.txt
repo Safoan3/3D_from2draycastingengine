@@ -1,0 +1,3 @@
+/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/Raycast.dir
+/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/edit_cache.dir
+/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/rebuild_cache.dir

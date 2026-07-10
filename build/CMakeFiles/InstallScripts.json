@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/mnt/share/dev/project-b/2draycaster/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
