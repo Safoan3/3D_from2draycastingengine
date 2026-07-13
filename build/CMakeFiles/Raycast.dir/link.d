@@ -13,7 +13,7 @@ Raycast: \
   /usr/lib/libXi.so \
   /usr/lib/libSDL3.so.0.4.12 \
   /usr/lib/libvulkan.so \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libstdc++.so \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/libstdc++.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libm.so \
@@ -47,6 +47,8 @@ Raycast: \
   /usr/lib/libGLdispatch.so.0 \
   /usr/lib32/libGLX.so.0 \
   /usr/lib/libGLX.so.0 \
+  /usr/lib32/libstdc++.so.6 \
+  /usr/lib/libstdc++.so.6 \
   /usr/lib32/libX11.so.6 \
   /usr/lib/libX11.so.6 \
   /usr/lib/libXrandr.so.2 \
@@ -57,7 +59,6 @@ Raycast: \
   /usr/lib/libXt.so.6 \
   /usr/lib32/libXext.so.6 \
   /usr/lib/libXext.so.6 \
-  /usr/lib/ld-linux-x86-64.so.2 \
   /usr/lib32/libxcb.so.1 \
   /usr/lib/libxcb.so.1 \
   /usr/lib/libXrender.so.1 \
@@ -97,7 +98,7 @@ CMakeFiles/Raycast.dir/src/raycaster.cpp.o:
 
 /usr/lib/libvulkan.so:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libstdc++.so:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libstdc++.a:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libm.so:
 
@@ -165,6 +166,10 @@ CMakeFiles/Raycast.dir/src/raycaster.cpp.o:
 
 /usr/lib/libGLX.so.0:
 
+/usr/lib32/libstdc++.so.6:
+
+/usr/lib/libstdc++.so.6:
+
 /usr/lib32/libX11.so.6:
 
 /usr/lib/libX11.so.6:
@@ -184,8 +189,6 @@ CMakeFiles/Raycast.dir/src/raycaster.cpp.o:
 /usr/lib32/libXext.so.6:
 
 /usr/lib/libXext.so.6:
-
-/usr/lib/ld-linux-x86-64.so.2:
 
 /usr/lib32/libxcb.so.1:
 
