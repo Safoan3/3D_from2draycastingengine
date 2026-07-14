@@ -3,12 +3,14 @@
 #include "../headers/math.h"
 #include "../headers/raycaster.h"
 #include <iostream>
+#include <random>
+#include <system_error>
 
 raycastResult StartRaycast(ray r) {
   // horizontal detection//boot/EFIUEFI-Shell/
   float maxHeight = 1;
   float maxWidth = 1;
-  float resf = (float)res;
+  float resf = (float)mapX.size;
   float cellSize = 1.0f / resf;
 
   float currentPx = r.origin.y;
@@ -20,7 +22,10 @@ raycastResult StartRaycast(ray r) {
   bool wallhit = false;
 
   raycastResult Result;
-  for (int i = 0; i < res * 2 && !wallhit; i++) {
+  float normalX = 0;
+  float nornalY = 0;
+
+  for (int i = 0; i < mapX.size * 2 && !wallhit; i++) {
     float tostore = (currentPx + remainings) + (i * cellSize);
     float tostorenegative =
         (currentPx - (cellSize - remainings)) - (i * cellSize);
@@ -34,13 +39,17 @@ raycastResult StartRaycast(ray r) {
     int cellPos = (int)(tostore / cellSize);
     if (r.direction.y < 0.0f) {
       cellPos = cellPos - 1;
+      nornalY = -1;
+
+    } else {
+      nornalY = 1;
     }
 
     // std::cout << cellPos << std::endl;
 
-    for (int z = 0; z < res; z++) {
+    for (int z = 0; z < mapX.size; z++) {
       if (cp.x > (cellSize * z) && cp.x < (cellSize * (z + 1)) &&
-          map[cellPos * res + z] != 0 && wallhit == false) {
+          mapX.mapinfo[cellPos * mapX.size + z] != 0 && wallhit == false) {
         // std::cout << "potential hit detecteon at " << z << std::endl;
         wallhit = true;
         break;
@@ -67,7 +76,7 @@ raycastResult StartRaycast(ray r) {
   vec2 wallHitPos = {0, 0}; // NEW: was hitPosition
   bool wallFound = false;   // NEW: was wallhit
 
-  for (int step = 0; step < res * 2 && !wallFound; step++) { // NEW: was i
+  for (int step = 0; step < mapX.size * 2 && !wallFound; step++) { // NEW: was i
     float gridX =
         (startX + distanceToNextX) + (step * cellSize); // NEW: was tostore
     float gridXNegative = (startX - (cellSize - distanceToNextX)) -
@@ -84,13 +93,18 @@ raycastResult StartRaycast(ray r) {
     int cellIndexX = (int)(gridX / cellSize); // NEW: was cellPos
     if (r.direction.x < 0.0f) {
       cellIndexX = cellIndexX - 1;
+      normalX = -1;
+
+    } else {
+      normalX = 1;
     }
 
-    for (int cellY = 0; cellY < res; cellY++) { // NEW: was z
+    for (int cellY = 0; cellY < mapX.size; cellY++) { // NEW: was z
       // Check if intersectPoint.y is in cell cellY
       if (intersectPoint.y > (cellSize * cellY) &&
           intersectPoint.y < (cellSize * (cellY + 1)) &&
-          map[cellY * res + cellIndexX] != 0 && wallFound == false) {
+          mapX.mapinfo[cellY * mapX.size + cellIndexX] != 0 &&
+          wallFound == false) {
         wallFound = true;
         break;
       }
@@ -119,20 +133,42 @@ raycastResult StartRaycast(ray r) {
   bool hValid = (hitPosition.magnitude() != 0);
   bool vValid = (wallHitPos.magnitude() != 0);
 
+  // Result.normal = {-normalX, -nornalY};
+
+  vec2 yN = {0, -nornalY};
+  vec2 xN = {-normalX, 0};
+
+  if (!hValid || !vValid) {
+    Result.casted = false;
+  }
+
   if (hValid && vValid) {
     Result.hit = (mag1 < mag2) ? hitPosition : wallHitPos;
+
+    Result.normal = (mag1 < mag2) ? yN : xN;
+    Result.casted = true;
+
   } else if (hValid) {
+
     Result.hit = hitPosition;
+    Result.casted = true;
+    Result.normal = yN;
+
   } else if (vValid) {
     Result.hit = wallHitPos;
+    Result.casted = true;
+    Result.normal = xN;
   }
 
-  Result.distance = (Result.hit - r.origin).magnitude();
+  if (Result.casted) {
+    Result.distance = (Result.hit - r.origin).magnitude();
 
-  if (Result.distance > 0.0f) {
-    Result.r = 1.0f;
-    Result.g = 1.0f;
-    Result.b = 1.0f;
+    if (Result.distance > 0.0f) {
+      Result.r = 1.0f;
+      Result.g = 1.0f;
+      Result.b = 1.0f;
+    }
   }
+
   return Result;
 };

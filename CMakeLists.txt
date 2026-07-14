@@ -16,7 +16,7 @@ include_directories(headers)
 
 
 
-add_executable(Raycast src/engine.cpp src/raycaster.cpp)
+add_executable(Raycast src/engine.cpp src/raycaster.cpp src/render.cpp)
 
 
 

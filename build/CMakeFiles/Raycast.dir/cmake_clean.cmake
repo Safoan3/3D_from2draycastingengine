@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Raycast.dir/src/engine.cpp.o.d"
   "CMakeFiles/Raycast.dir/src/raycaster.cpp.o"
   "CMakeFiles/Raycast.dir/src/raycaster.cpp.o.d"
+  "CMakeFiles/Raycast.dir/src/render.cpp.o"
+  "CMakeFiles/Raycast.dir/src/render.cpp.o.d"
   "Raycast"
   "Raycast.pdb"
 )

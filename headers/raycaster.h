@@ -12,6 +12,7 @@ struct raycastResult {
   float distance;
   vec2 normal;
   vec2 hit;
+  bool casted = false;
   float r, g, b;
 };
 

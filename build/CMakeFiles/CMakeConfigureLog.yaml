@@ -32,6 +32,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
     searched_directories:
       - "/usr/local/sbin/uname"
       - "/usr/local/bin/uname"
@@ -51,14 +52,16 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:218 (message)"
       - "CMakeLists.txt:3 (project)"
     message: |
-      The system is: Linux - 6.18.38-1-cachyos-lts - x86_64
+      The system is: Linux - 6.18.38-2-cachyos-lts - x86_64
   -
     kind: "find-v1"
     backtrace:
@@ -92,6 +95,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
     searched_directories:
       - "/usr/local/sbin/gmake"
       - "/usr/local/bin/gmake"
@@ -105,6 +109,7 @@ events:
       - "/usr/bin/vendor_perl/gmake"
       - "/usr/bin/core_perl/gmake"
       - "/home/safoan/.local/bin/gmake"
+      - "/opt/cuda/bin/gmake"
       - "/usr/local/sbin/make"
       - "/usr/local/bin/make"
     found: "/usr/sbin/make"
@@ -123,7 +128,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -165,6 +172,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
     searched_directories:
       - "/usr/local/sbin/c++"
       - "/usr/local/bin/c++"
@@ -184,12 +192,14 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
@@ -225,7 +235,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
   -
     kind: "message-v1"
     backtrace:
@@ -246,12 +258,12 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        /mnt/share/dev/project-b/2draycaster/build/CMakeFiles/4.3.4/CompilerIdCXX/a.out
+        /mnt/share/dev/project-b/2draycaster/build/CMakeFiles/4.4.0/CompilerIdCXX/a.out
       
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
@@ -280,6 +292,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
     found: "/usr/sbin/ar"
     search_context:
       ENV{PATH}:
@@ -296,11 +309,13 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
@@ -329,6 +344,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
     found: "/usr/sbin/ranlib"
     search_context:
       ENV{PATH}:
@@ -345,11 +361,13 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
@@ -378,6 +396,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
     found: "/usr/sbin/strip"
     search_context:
       ENV{PATH}:
@@ -394,11 +413,13 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
@@ -427,6 +448,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
     found: "/usr/sbin/ld"
     search_context:
       ENV{PATH}:
@@ -443,11 +465,13 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
@@ -476,6 +500,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
     found: "/usr/sbin/nm"
     search_context:
       ENV{PATH}:
@@ -492,11 +517,13 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
@@ -525,6 +552,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
     found: "/usr/sbin/objdump"
     search_context:
       ENV{PATH}:
@@ -541,11 +569,13 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
@@ -574,6 +604,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
     found: "/usr/sbin/objcopy"
     search_context:
       ENV{PATH}:
@@ -590,11 +621,13 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
@@ -623,6 +656,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
     found: "/usr/sbin/readelf"
     search_context:
       ENV{PATH}:
@@ -639,11 +673,13 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
@@ -672,6 +708,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
     searched_directories:
       - "/usr/sbin/dlltool"
       - "/usr/local/sbin/dlltool"
@@ -685,6 +722,7 @@ events:
       - "/usr/bin/vendor_perl/dlltool"
       - "/usr/bin/core_perl/dlltool"
       - "/home/safoan/.local/bin/dlltool"
+      - "/opt/cuda/bin/dlltool"
     found: false
     search_context:
       ENV{PATH}:
@@ -701,11 +739,13 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
@@ -734,6 +774,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
     found: "/usr/sbin/addr2line"
     search_context:
       ENV{PATH}:
@@ -750,11 +791,13 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
@@ -783,6 +826,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
     searched_directories:
       - "/usr/sbin/tapi"
       - "/usr/local/sbin/tapi"
@@ -796,6 +840,7 @@ events:
       - "/usr/bin/vendor_perl/tapi"
       - "/usr/bin/core_perl/tapi"
       - "/home/safoan/.local/bin/tapi"
+      - "/opt/cuda/bin/tapi"
     found: false
     search_context:
       ENV{PATH}:
@@ -812,7 +857,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -848,6 +895,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
     searched_directories:
       - "/usr/sbin/gcc-ar-16.1"
       - "/usr/local/sbin/gcc-ar-16.1"
@@ -861,6 +909,7 @@ events:
       - "/usr/bin/vendor_perl/gcc-ar-16.1"
       - "/usr/bin/core_perl/gcc-ar-16.1"
       - "/home/safoan/.local/bin/gcc-ar-16.1"
+      - "/opt/cuda/bin/gcc-ar-16.1"
       - "/usr/sbin/gcc-ar-16"
       - "/usr/local/sbin/gcc-ar-16"
       - "/usr/local/bin/gcc-ar-16"
@@ -873,6 +922,7 @@ events:
       - "/usr/bin/vendor_perl/gcc-ar-16"
       - "/usr/bin/core_perl/gcc-ar-16"
       - "/home/safoan/.local/bin/gcc-ar-16"
+      - "/opt/cuda/bin/gcc-ar-16"
       - "/usr/sbin/gcc-ar16"
       - "/usr/local/sbin/gcc-ar16"
       - "/usr/local/bin/gcc-ar16"
@@ -885,6 +935,7 @@ events:
       - "/usr/bin/vendor_perl/gcc-ar16"
       - "/usr/bin/core_perl/gcc-ar16"
       - "/home/safoan/.local/bin/gcc-ar16"
+      - "/opt/cuda/bin/gcc-ar16"
     found: "/usr/sbin/gcc-ar"
     search_context:
       ENV{PATH}:
@@ -901,7 +952,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -937,6 +990,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
     searched_directories:
       - "/usr/sbin/gcc-ranlib-16.1"
       - "/usr/local/sbin/gcc-ranlib-16.1"
@@ -950,6 +1004,7 @@ events:
       - "/usr/bin/vendor_perl/gcc-ranlib-16.1"
       - "/usr/bin/core_perl/gcc-ranlib-16.1"
       - "/home/safoan/.local/bin/gcc-ranlib-16.1"
+      - "/opt/cuda/bin/gcc-ranlib-16.1"
       - "/usr/sbin/gcc-ranlib-16"
       - "/usr/local/sbin/gcc-ranlib-16"
       - "/usr/local/bin/gcc-ranlib-16"
@@ -962,6 +1017,7 @@ events:
       - "/usr/bin/vendor_perl/gcc-ranlib-16"
       - "/usr/bin/core_perl/gcc-ranlib-16"
       - "/home/safoan/.local/bin/gcc-ranlib-16"
+      - "/opt/cuda/bin/gcc-ranlib-16"
       - "/usr/sbin/gcc-ranlib16"
       - "/usr/local/sbin/gcc-ranlib16"
       - "/usr/local/bin/gcc-ranlib16"
@@ -974,6 +1030,7 @@ events:
       - "/usr/bin/vendor_perl/gcc-ranlib16"
       - "/usr/bin/core_perl/gcc-ranlib16"
       - "/home/safoan/.local/bin/gcc-ranlib16"
+      - "/opt/cuda/bin/gcc-ranlib16"
     found: "/usr/sbin/gcc-ranlib"
     search_context:
       ENV{PATH}:
@@ -990,18 +1047,20 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-arKbzc"
-      binary: "/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-arKbzc"
+      source: "/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-lTGf5P"
+      binary: "/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-lTGf5P"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1010,15 +1069,15 @@ events:
       CMAKE_EXE_LINKER_FLAGS: ""
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
-      cached: true
+      cached: false
       stdout: |
-        Change Dir: '/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-arKbzc'
+        Change Dir: '/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-lTGf5P'
         
-        Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_b14eb/fast
-        /usr/sbin/make  -f CMakeFiles/cmTC_b14eb.dir/build.make CMakeFiles/cmTC_b14eb.dir/build
-        make[1]: Entering directory '/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-arKbzc'
-        Building CXX object CMakeFiles/cmTC_b14eb.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/sbin/c++   -v -o CMakeFiles/cmTC_b14eb.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_b103c/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_b103c.dir/build.make CMakeFiles/cmTC_b103c.dir/build
+        make[1]: Entering directory '/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-lTGf5P'
+        Building CXX object CMakeFiles/cmTC_b103c.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/sbin/c++   -v -o CMakeFiles/cmTC_b103c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/sbin/c++
         Target: x86_64-pc-linux-gnu
@@ -1026,10 +1085,10 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 16.1.1 20260625 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b14eb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b14eb.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b14eb.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cckEn5yU.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b103c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b103c.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b103c.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccN9gLBf.s
         GNU C++20 (GCC) version 16.1.1 20260625 (x86_64-pc-linux-gnu)
-        	compiled by GNU C version 16.1.1 20260625, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.27-GMP
+        	compiled by GNU C version 16.1.1 20260625, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.28-GMP
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/16/include-fixed"
@@ -1044,14 +1103,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: bb106f3decfb77e7e020b92459b20640
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b14eb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b14eb.dir/'
-         as -v --64 -o CMakeFiles/cmTC_b14eb.dir/CMakeCXXCompilerABI.cpp.o /tmp/cckEn5yU.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b103c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b103c.dir/'
+         as -v --64 -o CMakeFiles/cmTC_b103c.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccN9gLBf.s
         GNU assembler version 2.46.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.46.1
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b14eb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b14eb.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_b14eb
-        /usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_b14eb.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b103c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b103c.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_b103c
+        /usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_b103c.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/sbin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper
@@ -1062,20 +1121,20 @@ events:
         gcc version 16.1.1 20260625 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b14eb' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b14eb.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccD0pqpA.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b14eb /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b14eb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b103c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b103c.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHh42S8.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b103c /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b103c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
         collect2 version 16.1.1 20260625
-        /usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccD0pqpA.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b14eb /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b14eb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
+        /usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHh42S8.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b103c /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b103c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
         GNU ld (GNU Binutils) 2.46.1
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b14eb' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b14eb.'
-        /usr/sbin/c++  -v -Wl,-v CMakeFiles/cmTC_b14eb.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b14eb
-        make[1]: Leaving directory '/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-arKbzc'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b103c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b103c.'
+        /usr/sbin/c++  -v -Wl,-v CMakeFiles/cmTC_b103c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b103c
+        make[1]: Leaving directory '/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-lTGf5P'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (message)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     message: |
@@ -1101,20 +1160,20 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     message: |
       Parsed CXX implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-arKbzc']
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
+        ignore line: [Change Dir: '/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-lTGf5P']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_b14eb/fast]
-        ignore line: [/usr/sbin/make  -f CMakeFiles/cmTC_b14eb.dir/build.make CMakeFiles/cmTC_b14eb.dir/build]
-        ignore line: [make[1]: Entering directory '/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-arKbzc']
-        ignore line: [Building CXX object CMakeFiles/cmTC_b14eb.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/sbin/c++   -v -o CMakeFiles/cmTC_b14eb.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_b103c/fast]
+        ignore line: [/usr/sbin/make  -f CMakeFiles/cmTC_b103c.dir/build.make CMakeFiles/cmTC_b103c.dir/build]
+        ignore line: [make[1]: Entering directory '/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-lTGf5P']
+        ignore line: [Building CXX object CMakeFiles/cmTC_b103c.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/sbin/c++   -v -o CMakeFiles/cmTC_b103c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/sbin/c++]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -1122,10 +1181,10 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 16.1.1 20260625 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b14eb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b14eb.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b14eb.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cckEn5yU.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b103c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b103c.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b103c.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccN9gLBf.s]
         ignore line: [GNU C++20 (GCC) version 16.1.1 20260625 (x86_64-pc-linux-gnu)]
-        ignore line: [	compiled by GNU C version 16.1.1 20260625  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.27-GMP]
+        ignore line: [	compiled by GNU C version 16.1.1 20260625  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.28-GMP]
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/16/include-fixed"]
@@ -1140,14 +1199,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: bb106f3decfb77e7e020b92459b20640]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b14eb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b14eb.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_b14eb.dir/CMakeCXXCompilerABI.cpp.o /tmp/cckEn5yU.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b103c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b103c.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_b103c.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccN9gLBf.s]
         ignore line: [GNU assembler version 2.46.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.46.1]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b14eb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b14eb.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_b14eb]
-        ignore line: [/usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_b14eb.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b103c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b103c.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_b103c]
+        ignore line: [/usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_b103c.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/sbin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper]
@@ -1158,13 +1217,13 @@ events:
         ignore line: [gcc version 16.1.1 20260625 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b14eb' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b14eb.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccD0pqpA.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b14eb /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b14eb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b103c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b103c.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHh42S8.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b103c /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b103c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccD0pqpA.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccHh42S8.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-latomic_asneeded] ==> ignore
@@ -1180,7 +1239,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_b14eb] ==> ignore
+          arg [cmTC_b103c] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o]
@@ -1192,7 +1251,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_b14eb.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_b103c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -1204,8 +1263,10 @@ events:
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
         ignore line: [collect2 version 16.1.1 20260625]
-        ignore line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccD0pqpA.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b14eb /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b14eb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
-        linker tool for 'CXX': /usr/sbin/ld
+        link line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHh42S8.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b103c /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b103c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker [/usr/sbin/ld]
+        link line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHh42S8.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b103c /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b103c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker architecture flags [-m;elf]
+        ignore line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHh42S8.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b103c /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b103c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
+        linker tool for 'CXX': /usr/sbin/ld -m;elf
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
@@ -1225,8 +1286,8 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     message: |
@@ -1263,6 +1324,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
@@ -1291,6 +1353,7 @@ events:
       - "/usr/bin/vendor_perl/GL/gl.h"
       - "/usr/bin/core_perl/GL/gl.h"
       - "/home/safoan/.local/bin/GL/gl.h"
+      - "/opt/cuda/bin/GL/gl.h"
       - "/usr/local/include/GL/gl.h"
       - "/usr/local/GL/gl.h"
     found: "/usr/include/"
@@ -1309,7 +1372,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -1353,6 +1418,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
@@ -1378,6 +1444,7 @@ events:
       - "/usr/bin/vendor_perl/GL/glx.h"
       - "/usr/bin/core_perl/GL/glx.h"
       - "/home/safoan/.local/bin/GL/glx.h"
+      - "/opt/cuda/bin/GL/glx.h"
       - "/usr/local/include/GL/glx.h"
       - "/usr/local/GL/glx.h"
     found: "/usr/include/"
@@ -1396,7 +1463,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -1440,6 +1509,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
@@ -1465,6 +1535,7 @@ events:
       - "/usr/bin/vendor_perl/EGL/egl.h"
       - "/usr/bin/core_perl/EGL/egl.h"
       - "/home/safoan/.local/bin/EGL/egl.h"
+      - "/opt/cuda/bin/EGL/egl.h"
       - "/usr/local/include/EGL/egl.h"
       - "/usr/local/EGL/egl.h"
     found: "/usr/include/"
@@ -1483,7 +1554,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -1527,6 +1600,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
@@ -1552,6 +1626,7 @@ events:
       - "/usr/bin/vendor_perl/GLES2/gl2.h"
       - "/usr/bin/core_perl/GLES2/gl2.h"
       - "/home/safoan/.local/bin/GLES2/gl2.h"
+      - "/opt/cuda/bin/GLES2/gl2.h"
       - "/usr/local/include/GLES2/gl2.h"
       - "/usr/local/GLES2/gl2.h"
     found: "/usr/include/"
@@ -1570,7 +1645,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -1614,6 +1691,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
@@ -1639,6 +1717,7 @@ events:
       - "/usr/bin/vendor_perl/GLES3/gl3.h"
       - "/usr/bin/core_perl/GLES3/gl3.h"
       - "/home/safoan/.local/bin/GLES3/gl3.h"
+      - "/opt/cuda/bin/GLES3/gl3.h"
       - "/usr/local/include/GLES3/gl3.h"
       - "/usr/local/GLES3/gl3.h"
     found: "/usr/include/"
@@ -1657,7 +1736,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -1701,6 +1782,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
@@ -1729,6 +1811,7 @@ events:
       - "/usr/bin/vendor_perl/GL/xmesa.h"
       - "/usr/bin/core_perl/GL/xmesa.h"
       - "/home/safoan/.local/bin/GL/xmesa.h"
+      - "/opt/cuda/bin/GL/xmesa.h"
       - "/usr/local/include/GL/xmesa.h"
       - "/usr/local/GL/xmesa.h"
       - "/usr/include/GL/xmesa.h"
@@ -1760,7 +1843,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -1804,6 +1889,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
@@ -1829,6 +1915,7 @@ events:
       - "/usr/bin/vendor_perl/GL/glu.h"
       - "/usr/bin/core_perl/GL/glu.h"
       - "/home/safoan/.local/bin/GL/glu.h"
+      - "/opt/cuda/bin/GL/glu.h"
       - "/usr/local/include/GL/glu.h"
       - "/usr/local/GL/glu.h"
     found: "/usr/include/"
@@ -1847,7 +1934,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -1891,6 +1980,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
       - "/usr/lib/"
@@ -1916,6 +2006,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
     found: "/usr/lib/libOpenGL.so"
@@ -1934,7 +2025,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -1990,6 +2083,8 @@ events:
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/libglvnd/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/libglvnd/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/libglvnd/"
       - "/usr/local/lib/"
       - "/usr/local/libglvnd/"
@@ -2039,6 +2134,8 @@ events:
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/libglvnd/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/libglvnd/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/libglvnd/"
       - "/usr/local/lib/"
       - "/usr/local/libglvnd/"
@@ -2060,7 +2157,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2116,6 +2215,8 @@ events:
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/libglvnd/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/libglvnd/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/libglvnd/"
       - "/usr/local/lib/"
       - "/usr/local/libglvnd/"
@@ -2165,6 +2266,8 @@ events:
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/libglvnd/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/libglvnd/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/libglvnd/"
       - "/usr/local/lib/"
       - "/usr/local/libglvnd/"
@@ -2186,7 +2289,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2230,6 +2335,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
       - "/usr/lib/"
@@ -2255,6 +2361,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
     found: "/usr/lib/libGLESv2.so"
@@ -2273,7 +2380,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2318,6 +2427,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
       - "/usr/lib/"
@@ -2343,6 +2453,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
       - "/usr/lib/"
@@ -2367,6 +2478,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
     found: "/usr/lib/libGLESv2.so"
@@ -2385,7 +2497,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2430,6 +2544,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
       - "/usr/lib/"
@@ -2458,6 +2573,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
     found: "/usr/lib/libGLU.so"
@@ -2476,7 +2592,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2533,6 +2651,8 @@ events:
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/libglvnd/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/libglvnd/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/libglvnd/"
       - "/usr/local/lib/"
       - "/usr/local/libglvnd/"
@@ -2588,6 +2708,8 @@ events:
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/libglvnd/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/libglvnd/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/libglvnd/"
       - "/usr/local/lib/"
       - "/usr/local/libglvnd/"
@@ -2609,7 +2731,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2625,7 +2749,7 @@ events:
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:138 (try_compile)"
       - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
       - "/usr/share/cmake/Modules/FindThreads.cmake:162 (check_cxx_source_compiles)"
       - "/usr/share/cmake/Modules/FindThreads.cmake:226 (_threads_check_libc)"
@@ -2636,8 +2760,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-QXeza7"
-      binary: "/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-QXeza7"
+      source: "/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-8aOj4S"
+      binary: "/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-8aOj4S"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2647,17 +2771,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-QXeza7'
+        Change Dir: '/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-8aOj4S'
         
-        Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_f25c7/fast
-        /usr/sbin/make  -f CMakeFiles/cmTC_f25c7.dir/build.make CMakeFiles/cmTC_f25c7.dir/build
-        make[1]: Entering directory '/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-QXeza7'
-        Building CXX object CMakeFiles/cmTC_f25c7.dir/src.cxx.o
-        /usr/sbin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles/cmTC_f25c7.dir/src.cxx.o -c /mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-QXeza7/src.cxx
-        Linking CXX executable cmTC_f25c7
-        /usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_f25c7.dir/link.txt --verbose=1
-        /usr/sbin/c++ CMakeFiles/cmTC_f25c7.dir/src.cxx.o -o cmTC_f25c7
-        make[1]: Leaving directory '/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-QXeza7'
+        Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_c5932/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_c5932.dir/build.make CMakeFiles/cmTC_c5932.dir/build
+        make[1]: Entering directory '/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-8aOj4S'
+        Building CXX object CMakeFiles/cmTC_c5932.dir/src.cxx.o
+        /usr/sbin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles/cmTC_c5932.dir/src.cxx.o -c /mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-8aOj4S/src.cxx
+        Linking CXX executable cmTC_c5932
+        /usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_c5932.dir/link.txt --verbose=1
+        /usr/sbin/c++ CMakeFiles/cmTC_c5932.dir/src.cxx.o -o cmTC_c5932
+        make[1]: Leaving directory '/mnt/share/dev/project-b/2draycaster/build/CMakeFiles/CMakeScratch/TryCompile-8aOj4S'
         
       exitCode: 0
   -
@@ -2765,7 +2889,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2812,6 +2938,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/"
@@ -2850,7 +2977,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2904,7 +3033,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2951,6 +3082,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
       - "/usr/lib/"
@@ -2977,6 +3109,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
     found: "/usr/lib/libXi.so"
@@ -2995,7 +3128,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3042,6 +3177,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
       - "/usr/lib/"
@@ -3068,6 +3204,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
     found: "/usr/lib/libXmu.so"
@@ -3086,7 +3223,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3134,6 +3273,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
@@ -3167,7 +3307,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3215,6 +3357,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
       - "/usr/lib/"
@@ -3244,7 +3387,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3300,7 +3445,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3356,7 +3503,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3504,7 +3653,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3518,7 +3669,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/FindVulkan.cmake:408 (find_path)"
+      - "/usr/share/cmake/Modules/FindVulkan.cmake:453 (find_path)"
       - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
       - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "/usr/share/imgui/imgui-config.cmake:46 (find_dependency)"
@@ -3549,6 +3700,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
@@ -3574,6 +3726,7 @@ events:
       - "/usr/bin/vendor_perl/vulkan/vulkan.h"
       - "/usr/bin/core_perl/vulkan/vulkan.h"
       - "/home/safoan/.local/bin/vulkan/vulkan.h"
+      - "/opt/cuda/bin/vulkan/vulkan.h"
       - "/usr/local/include/vulkan/vulkan.h"
       - "/usr/local/vulkan/vulkan.h"
     found: "/usr/include/"
@@ -3592,7 +3745,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3608,7 +3763,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/FindVulkan.cmake:415 (find_library)"
+      - "/usr/share/cmake/Modules/FindVulkan.cmake:460 (find_library)"
       - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
       - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "/usr/share/imgui/imgui-config.cmake:46 (find_dependency)"
@@ -3639,6 +3794,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
       - "/usr/lib/"
@@ -3664,6 +3820,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
     found: "/usr/lib/libvulkan.so"
@@ -3682,7 +3839,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3698,7 +3857,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/FindVulkan.cmake:423 (find_program)"
+      - "/usr/share/cmake/Modules/FindVulkan.cmake:493 (find_program)"
       - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
       - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "/usr/share/imgui/imgui-config.cmake:46 (find_dependency)"
@@ -3729,6 +3888,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/"
@@ -3765,7 +3925,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3779,7 +3941,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/FindVulkan.cmake:431 (find_program)"
+      - "/usr/share/cmake/Modules/FindVulkan.cmake:501 (find_program)"
       - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
       - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "/usr/share/imgui/imgui-config.cmake:46 (find_dependency)"
@@ -3810,6 +3972,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/"
@@ -3846,7 +4009,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3966,7 +4131,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -4299,7 +4466,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -4341,6 +4510,7 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
@@ -4366,6 +4536,7 @@ events:
       - "/usr/bin/vendor_perl/GL/glew.h"
       - "/usr/bin/core_perl/GL/glew.h"
       - "/home/safoan/.local/bin/GL/glew.h"
+      - "/opt/cuda/bin/GL/glew.h"
       - "/usr/local/include/GL/glew.h"
       - "/usr/local/GL/glew.h"
     found: "/usr/include/"
@@ -4384,7 +4555,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -4478,6 +4651,11 @@ events:
       - "/home/safoan/.local/bin/libx32/"
       - "/home/safoan/.local/bin/lib/Release/x64/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/lib/"
+      - "/opt/cuda/bin/lib64/"
+      - "/opt/cuda/bin/libx32/"
+      - "/opt/cuda/bin/lib/Release/x64/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/lib/"
       - "/usr/local/lib/lib64/"
       - "/usr/local/lib/libx32/"
@@ -4719,6 +4897,21 @@ events:
       - "/home/safoan/.local/bin/"
       - "/home/safoan/.local/bin/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/lib/"
+      - "/opt/cuda/bin/lib/"
+      - "/opt/cuda/bin/lib/"
+      - "/opt/cuda/bin/lib64/"
+      - "/opt/cuda/bin/lib64/"
+      - "/opt/cuda/bin/lib64/"
+      - "/opt/cuda/bin/libx32/"
+      - "/opt/cuda/bin/libx32/"
+      - "/opt/cuda/bin/libx32/"
+      - "/opt/cuda/bin/lib/Release/x64/"
+      - "/opt/cuda/bin/lib/Release/x64/"
+      - "/opt/cuda/bin/lib/Release/x64/"
+      - "/opt/cuda/bin/"
+      - "/opt/cuda/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/lib/"
       - "/usr/local/lib/lib/"
       - "/usr/local/lib/lib/"
@@ -4777,7 +4970,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -4847,6 +5042,9 @@ events:
       - "/home/safoan/.local/bin/lib/"
       - "/home/safoan/.local/bin/lib64/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/lib/"
+      - "/opt/cuda/bin/lib64/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/lib/"
       - "/usr/local/lib/lib64/"
       - "/usr/local/lib/"
@@ -4992,6 +5190,15 @@ events:
       - "/home/safoan/.local/bin/"
       - "/home/safoan/.local/bin/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/lib/"
+      - "/opt/cuda/bin/lib/"
+      - "/opt/cuda/bin/lib/"
+      - "/opt/cuda/bin/lib64/"
+      - "/opt/cuda/bin/lib64/"
+      - "/opt/cuda/bin/lib64/"
+      - "/opt/cuda/bin/"
+      - "/opt/cuda/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/lib/"
       - "/usr/local/lib/lib/"
       - "/usr/local/lib/lib/"
@@ -5116,7 +5323,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -5210,6 +5419,11 @@ events:
       - "/home/safoan/.local/bin/libx32/"
       - "/home/safoan/.local/bin/lib/Release/x64/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/lib/"
+      - "/opt/cuda/bin/lib64/"
+      - "/opt/cuda/bin/libx32/"
+      - "/opt/cuda/bin/lib/Release/x64/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/lib/"
       - "/usr/local/lib/lib64/"
       - "/usr/local/lib/libx32/"
@@ -5451,6 +5665,21 @@ events:
       - "/home/safoan/.local/bin/"
       - "/home/safoan/.local/bin/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/lib/"
+      - "/opt/cuda/bin/lib/"
+      - "/opt/cuda/bin/lib/"
+      - "/opt/cuda/bin/lib64/"
+      - "/opt/cuda/bin/lib64/"
+      - "/opt/cuda/bin/lib64/"
+      - "/opt/cuda/bin/libx32/"
+      - "/opt/cuda/bin/libx32/"
+      - "/opt/cuda/bin/libx32/"
+      - "/opt/cuda/bin/lib/Release/x64/"
+      - "/opt/cuda/bin/lib/Release/x64/"
+      - "/opt/cuda/bin/lib/Release/x64/"
+      - "/opt/cuda/bin/"
+      - "/opt/cuda/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/lib/"
       - "/usr/local/lib/lib/"
       - "/usr/local/lib/lib/"
@@ -5647,7 +5876,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -5717,6 +5948,9 @@ events:
       - "/home/safoan/.local/bin/lib/"
       - "/home/safoan/.local/bin/lib64/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/lib/"
+      - "/opt/cuda/bin/lib64/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/lib/"
       - "/usr/local/lib/lib64/"
       - "/usr/local/lib/"
@@ -5862,6 +6096,15 @@ events:
       - "/home/safoan/.local/bin/"
       - "/home/safoan/.local/bin/"
       - "/home/safoan/.local/bin/"
+      - "/opt/cuda/bin/lib/"
+      - "/opt/cuda/bin/lib/"
+      - "/opt/cuda/bin/lib/"
+      - "/opt/cuda/bin/lib64/"
+      - "/opt/cuda/bin/lib64/"
+      - "/opt/cuda/bin/lib64/"
+      - "/opt/cuda/bin/"
+      - "/opt/cuda/bin/"
+      - "/opt/cuda/bin/"
       - "/usr/local/lib/lib/"
       - "/usr/local/lib/lib/"
       - "/usr/local/lib/lib/"
@@ -5986,7 +6229,9 @@ events:
         - "/usr/bin/core_perl"
         - "/home/safoan/.local/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
         - "/home/safoan/.local/bin"
+        - "/opt/cuda/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
